@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1953ce487c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Img/images.jpg" height="100" width: 100 class="logo">
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer, Front-End</p>
+                <h1>Hi, I'm <span>Dan</span><br>Marino From California</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <Img src="Img/Corporate Handshake Agreement copy.jpg" height="620" width="350"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Entry Full-Stack Developer with interest in front-end; Growing up in web 1.0/2.0 enviorment:
+                        Tv, Instagram, video games,etc. I developed a huge interest in programming. getting into
+                        development I believe i can put my interest into one all under programming. Currently
+                        understand HTML, Css, JavaScript, Sql, C#--- with future interest in Python, Node.js,
+                        back-end dev, data science, and game development.
+                    </p>
+                    <div class="tab-contents">
+                        <h2 position="left">Skills</h2>
+                        <ul position="right">
+                            <li><span>UI?UX:</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development:</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents ">
+                        <ul>
+                            <h2>Languages</h2>
+                            <li><span>TrueCoders:</span><br>C#, Html, Css, JavaScript, Sql</li>
+                            <li><span>Free Code Camp:</span><br> .... </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <h2>Education</h2>
+                            <li><span>2024,</span><br>True Coders Software Engineering Program</li>
+                            <li><span>2024,</span><br>Free Code Camp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class ="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p> Utilize text, photos, graphics, and video clips. <br>
+                        to plan, ideate, create, and build websites and web pages<br>
+                        focusing on user experience, graphics, and overall look.
+                    </p>
+                    <a href="http://127.0.0.1:5500/index.html#contact" class ="btn">Contact Me</a>
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Manipulate user-focused designs for digital products: like <br>
+                        websites, mobile apps, and software interfaces. construct <br>
+                        applications for user satisfaction
+                    </p>
+                    <a href="http://127.0.0.1:5500/index.html#contact" class ="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------portfolio------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list"></div>
+                <div class="work">
+                        <h2>Personal Portfolio Site</h2>
+                        <img src="Img/images3..jpg" height: 180px/>
+                        <a href="http://127.0.0.1:5500/" class="btn">See more</a>
+                </div>
+                <div class="work">
+                        <h2>Expense-Log</h2>
+                        <img src="Img/images3..jpg" height: 180px/>
+                        <a href="https://localhost:7196/" class="btn">See more</a>
+                </div>
+                <div class="work" height: 180px>
+                    <h2>Clothing Store</h2>
+                    <img src="Img/images3..jpg"/>
+                    <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------contact---------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>technicaldanny302@gmail.com</p>
+                    <p>(661)561-2015</p>
+                    <a href="images/" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copywright">
+            <p>Copywright © Dan. Made with<i class="fa-sharp fa-solid fa-heart"></i>with HTML/CSS</p>
+        </div>
+    </div>
+    <script>
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwGiVqW8pBob9iqZdnwQZMRoM8EHJIyduHHrZAX6hWZfqgI9vNupngTSYj9kw2ssXQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+</body>
+</html>
