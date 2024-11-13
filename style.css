@@ -222,6 +222,10 @@ nav ul li a:hover::after{
     background-color: #f16717
 }
 /*-------------------------------contact------------------------*/
+p, p{
+    display: flex;
+    justify-content: space-around;
+}
 .contact-left{
     flex-basis: 35%;
     
@@ -287,6 +291,11 @@ form .btn2{
 .copyright i{
     color: #f16717;
 }
+.copywright {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
 
 /*----------------------css for small screens-------------------*/
 nav .fas{
@@ -294,6 +303,9 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
+    .container {
+        padding: 200px;
+}
 
 .work{
     vertical-align: middle;
@@ -304,7 +316,13 @@ nav .fas{
     flex-wrap: wrap;
     flex-direction: column;
 }
-
+Img {
+    height: fit-content;
+}
+h2 {
+    display: flex;
+    justify-content: space-around;
+}
 .header-text{
     margin: 100%;
     font-size: 16px;
@@ -348,6 +366,7 @@ nav ul .fas{
 .about-col-1{
     margin-bottom: 30px;
     height: 50px;
+}
 }
 .about-col-2{
     font-size: 14px;
